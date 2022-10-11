@@ -28,6 +28,7 @@ client_scripts {
 
 dependencies {
     "oxmysql",
+    "ox_lib",
     "ND_Core",
     "ND_Doorlocks"
 }
