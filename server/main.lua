@@ -65,7 +65,7 @@ RegisterNetEvent("ND_Properties:purchaseProperty", function(propertyId)
     NDCore.Functions.DeductMoney(propertyBuying.price, src, "bank")
     local result = MySQL.query.await("SELECT `id` FROM nd_properties WHERE `id` = ? LIMIT 1", {propertyBuying.propertyid})
     if result and result[1] and result[1].id == propertyBuying.propertyid then return end
-    MySQL.query("INSERT INTO nd_properties (id, owner) VALUES (?, ?)", {propertyBuying.propertyid, player.id})
+    MySQL.query("INSERT INTO nd_properties (id, owner, address) VALUES (?, ?, ?)", {propertyBuying.propertyid, player.id, propertyBuying.address})
     propertyBuying.owner = true
     propertyBuying.hasAccess = true
     TriggerClientEvent("ND_Properties:updateDoors", src, propertyBuying)
