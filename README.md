@@ -3,6 +3,9 @@
 </p>
 <p align='center'><b><a href="https://youtu.be/qR8pZ-Xw98I">Preview Video</a></b>
 
+## Warning:
+This resource is no longer supported, a new version can be found here [ND_Property](https://github.com/ND-Framework/ND_Property)
+
 ## Features:
 * Purchase properties
 * Grant access to players
